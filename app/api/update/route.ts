@@ -8,7 +8,7 @@ function hashOf(s: string) {
 export async function GET() {
   const ts = new Date().toISOString();
   const title = "Test insert (Supabase connected)";
-  const impact = "2?";
+  const impact = "2-star";
   const source = "local";
   const url = null;
 
@@ -18,11 +18,10 @@ export async function GET() {
     { ts, title, impact, source, url, hash }
   ]);
 
-  // If it already exists, unique hash will block; that's fine.
   return Response.json({
     ok: !error,
     ranAt: ts,
     inserted: !error,
-    error: error?.message || null,
+    error: error?.message || null
   });
 }
