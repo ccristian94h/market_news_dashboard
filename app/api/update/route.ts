@@ -7,7 +7,7 @@ function hashOf(s: string) {
 
 export async function GET() {
   const ts = new Date().toISOString();
-  const title = "Test insert ? (Supabase connected)";
+  const title = "Test insert (Supabase connected)";
   const impact = "2?";
   const source = "local";
   const url = null;
