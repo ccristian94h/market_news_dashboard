@@ -30,7 +30,7 @@ export default function Home() {
     <main style={{ padding: 24, fontFamily: "system-ui", maxWidth: 900, margin: "0 auto" }}>
       <h1 style={{ fontSize: 28, fontWeight: 800 }}>Market Dashboard</h1>
       <p style={{ opacity: 0.7 }}>
-        Updated: {feed?.updatedAt ? new Date(feed.updatedAt).toLocaleString() : "—"}
+        Updated: {feed?.updatedAt ? new Date(feed.updatedAt).toLocaleString() : "ï¿½"}
       </p>
 
       <div style={{ display: "flex", gap: 12, marginTop: 12 }}>
@@ -52,10 +52,10 @@ export default function Home() {
         {(feed?.items || []).map((x, i) => (
           <div key={i} style={{ padding: 14, borderRadius: 14, border: "1px solid #ddd" }}>
             <div style={{ fontWeight: 800 }}>
-              {x.impact} — {x.title}
+              {x.impact} ï¿½ {x.title}
             </div>
             <div style={{ opacity: 0.7, fontSize: 13 }}>
-              {new Date(x.ts).toLocaleString()} · {x.source}
+              {new Date(x.ts).toLocaleString()} ï¿½ {x.source}
             </div>
           </div>
         ))}
