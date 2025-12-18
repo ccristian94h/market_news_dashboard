@@ -21,6 +21,7 @@ export default function Home() {
       setErr(e?.message || "Failed to load feed");
     }
   }
+  //why is not going anywhere
 
   useEffect(() => {
     load();
